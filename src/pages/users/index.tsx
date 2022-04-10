@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
+import { HeadingTitle } from "../../components/Heading";
 import { Pagination } from "../../components/Pagination";
 import { Sidebar } from "../../components/Sidebar";
 
@@ -28,9 +29,7 @@ export default function UserList() {
 
         <Box flex="1" borderRadius={8} bg="gray.800" p="8">
           <Flex mb="8" justify="space-between" align="center">
-            <Heading size="lg" fontWeight="normal">
-              Usuários
-            </Heading>
+            <HeadingTitle title="Usuários"/>
 
             <Button
               as="a"
